@@ -17,7 +17,7 @@ console.log('Connected to WebSocket server.');
 
 socket.addEventListener('message', (event) => {
     const messagesDiv = document.getElementById('messages');
-    messagesDiv.innerHTML += '<p>${event.data.toString()}</p>';
+    messagesDiv.innerHTML += `<p>${event.data.toString()}</p>`;
 });
 
 function sendMessage() {
